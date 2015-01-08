@@ -1,31 +1,17 @@
 <!DOCTYPE html>
-<html data-ng-app="abd">
+<html>
 <head>
-    <title>Angular big data</title>
+    <title>Pure JS big data</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-    <style> .ng-hide { display: none !important; }
+    <style> 
     td {
         border: 1px solid #dadada;
     }
     </style>
 </head>
-<body data-ng-controller="bigdata as vm">
-
-    <table>
-    <thead>
-        
-    </thead>
-    <tbody>
-        <tr data-ng-repeat="row in data.rows"  on-last-repeat>
-            <td data-ng-repeat="cell in row.values">
-                {{cell.value}}
-            </td>
-        </tr>
-    </tbody>
-    </table>
-    <script src="/bower_components/angular/angular.js"></script>
+<body >
     <script src="app.js"></script>
 </body>
 </html>
